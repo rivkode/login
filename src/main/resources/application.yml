@@ -1,0 +1,23 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
+
+spring:
+  output:
+    ansi:
+      enabled: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lion_db?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+
+jwt:
+  token:
+    secret: "secretKey"
